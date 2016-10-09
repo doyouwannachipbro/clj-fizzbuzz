@@ -8,6 +8,8 @@
                     [6 "fizz"]
                     [5 "buzz"]
                     [10 "buzz"]
+                    [15 "fizzbuzz"]
+                    [30 "fizzbuzz"]
                     ]]
     (for [[value expected] test-cases]
       (it (str "returns " expected " for fizzbuzz of " value)
