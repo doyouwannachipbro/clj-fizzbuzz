@@ -1,3 +1,1 @@
-# Fizzbuzz in Clojure
-
-
+# clj-fizzbuzz
