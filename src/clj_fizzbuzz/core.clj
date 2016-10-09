@@ -1,4 +1,6 @@
 (ns clj-fizzbuzz.core)
 
 (defn fizzbuzz [n]
-  n)
+  (cond
+    (= n 3) "fizz"
+    :else n))
