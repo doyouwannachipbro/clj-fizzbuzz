@@ -17,5 +17,8 @@
 
   (it "returns a list of fizzbuzz from 1 to 10"
     (should= '(1 2 "fizz" 4 "buzz" "fizz" 7 8 "fizz" "buzz")
-                 (fizzbuzz-upto 10))))
+                 (fizzbuzz-upto 10)))
+  (it "prints a list of fizzbuzz from 1 to 10"
+    (should= "1\n2\nfizz\n4\nbuzz\nfizz\n7\n8\nfizz\nbuzz\n"
+             (with-out-str (print-fizzbuzz-upto 10)))))
 
