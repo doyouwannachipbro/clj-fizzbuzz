@@ -13,5 +13,9 @@
                     ]]
     (for [[value expected] test-cases]
       (it (str "returns " expected " for fizzbuzz of " value)
-        (should= expected (fizzbuzz value))))))
+        (should= expected (fizzbuzz value)))))
+
+  (it "returns a list of fizzbuzz from 1 to 10"
+    (should= '(1 2 "fizz" 4 "buzz" "fizz" 7 8 "fizz" "buzz")
+                 (fizzbuzz-upto 10))))
 

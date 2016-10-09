@@ -6,3 +6,6 @@
     (= 0 (mod n 5)) "buzz"
     (= 0 (mod n 3)) "fizz"
     :else n))
+
+(defn fizzbuzz-upto [n]
+  (map fizzbuzz (range 1 (inc n))))
