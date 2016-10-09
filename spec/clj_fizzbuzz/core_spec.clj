@@ -3,12 +3,11 @@
             [clj-fizzbuzz.core :refer :all]))
 
 (describe "fizzbuzz"
-  (it "returns 1 for fizzbuzz of 1"
-    (should= 1 (fizzbuzz 1)))
+  (let [test-cases [[1 1]
+                    [3 "fizz"]
+                    [5 "buzz"]
+                    ]]
+    (for [[value expected] test-cases]
+      (it (str "returns " expected " for fizzbuzz of " value)
+        (should= expected (fizzbuzz value))))))
 
-  (it "returns fizz for fizzbuzz of 3"
-    (should= "fizz" (fizzbuzz 3)))
-
-  (it "returns buzz for fizzbuzz of 5"
-    (should= "buzz" (fizzbuzz 5)))
-  )
