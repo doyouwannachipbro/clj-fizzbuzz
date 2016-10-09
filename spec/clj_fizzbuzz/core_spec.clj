@@ -2,6 +2,6 @@
   (:require [speclj.core :refer :all]
             [clj-fizzbuzz.core :refer :all]))
 
-(describe "a test"
-  (it "FIXME, I fail."
-    (should= 0 1)))
+(describe "fizzbuzz"
+  (it "returns 1 for fizzbuzz of 1"
+  (should= 1 (fizzbuzz 1))))
