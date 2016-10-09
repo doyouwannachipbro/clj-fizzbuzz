@@ -11,5 +11,8 @@
   (map fizzbuzz (range 1 (inc n))))
 
 (defn print-fizzbuzz-upto [n]
-  (doseq [fb-val (fizzbuzz-upto 10)]
+  (doseq [fb-val (fizzbuzz-upto n)]
     (println fb-val)))
+
+(defn -main [& args]
+  (print-fizzbuzz-upto 20))
