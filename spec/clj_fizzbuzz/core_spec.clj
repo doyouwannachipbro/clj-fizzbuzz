@@ -9,4 +9,6 @@
   (it "returns fizz for fizzbuzz of 3"
     (should= "fizz" (fizzbuzz 3)))
 
+  (it "returns buzz for fizzbuzz of 5"
+    (should= "buzz" (fizzbuzz 5)))
   )
